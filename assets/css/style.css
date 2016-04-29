@@ -1,5 +1,11 @@
 html, body{
-	font-family: "Montserrat", sans-serif;
+	font-family: 'montserratregular', "Montserrat", Helvetica, Arial, sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	font-family: 'montserratbold', Helvetica, Arial, sans-serif;
+}
+p{
+	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
 }
 .top-bar{
 	text-align: right;
@@ -43,12 +49,14 @@ html, body{
 .navbar-toggle .icon-bar{
 	background-color: #000000;
 }
-.navbar-collapse{
-	border-top: 3px solid #cccccc;
-}
 @media (min-width: 768px){
 	.navbar-nav {
 		margin-top: 40px;
+	}
+}
+@media (max-width: 767px){
+	.navbar-collapse{
+		border-top: 3px solid #cccccc;
 	}
 }
 .btn-primary{
@@ -71,8 +79,7 @@ html, body{
 	margin: 40px auto;
 }
 .sec{
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding: 30px;
 }
 .sec.grey{
 	background: #eeeeee;
@@ -138,4 +145,20 @@ html, body{
 .footer{
 	background: #eeeeee;
 	padding: 60px 0px;
+}
+.footer-nav ul{
+	padding-left: 0;
+}
+.footer-nav ul li{
+	display: inline-block;
+	margin-right: 10px;
+}
+.footer-nav ul li:last-of-type{
+	margin-right: 0px;
+}
+@media (min-width: 768px){
+	.sec{
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
 }
