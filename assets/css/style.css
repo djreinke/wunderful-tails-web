@@ -3,13 +3,16 @@ html, body{
 }
 .top-bar{
 	text-align: right;
-	background: #D80000;
+	background: #d2151d;
 	color: #ffffff;
 	font-weight: bold;
 	padding: 5px 0px;
 }
 .center{
 	text-align: center;
+}
+.left{
+	text-align: left;
 }
 .float-center{
 	margin: auto;
@@ -23,11 +26,36 @@ html, body{
 	border-bottom: 4px solid #E4E4E4;
 	margin-bottom: 0px;
 }
+.navbar-brand{
+	height: auto;
+	width: 320px;
+}
+.navbar-brand img{
+	width: 100%;
+}
+.nav>li>a{
+	color: #000000;
+	font-weight: bold;
+}
+.navbar-toggle{
+	margin-top: 36px;
+}
+.navbar-toggle .icon-bar{
+	background-color: #000000;
+}
+.navbar-collapse{
+	border-top: 3px solid #cccccc;
+}
+@media (min-width: 768px){
+	.navbar-nav {
+		margin-top: 40px;
+	}
+}
 .btn-primary{
 	background: #0F7AD6;
 	border-color: #0F7AD6;
 	color: #ffffff;
-	padding: 10px 12px;
+	padding: 16px 16px;
 	border-radius: 0px;
 	text-shadow: 0px 1px #0F7AD6;
 	font-weight: bold;
@@ -36,16 +64,76 @@ html, body{
 	background: #0F7AD6;
 	border-color: #0F7AD6;
 }
+.buf-sm{
+	margin: 20px auto;
+}
+.buf-md{
+	margin: 40px auto;
+}
 .sec{
-	padding-top: 60px;
-	padding-bottom: 60px;
+	padding-top: 70px;
+	padding-bottom: 70px;
 }
 .sec.grey{
 	background: #eeeeee;
 }
 .homepage-feat{
-	background: #D80000;
+	background: #d2151d;
 	color: #ffffff;
+	position: relative;
+	overflow: hidden;
+}
+.homepage-feat-meta{
+	position: relative;
+	z-index: 2;
+}
+.homepage-feat-meta h1{
+	font-size: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.homepage-feat-truck{
+	width: 300px;
+	padding-bottom: 18.8%;
+	background: url(../images/truck-hero.png) no-repeat;
+	background-size: contain;
+	background-position: center;
+	margin: 20px auto;
+}
+.homepage-feat-duke{
+	position: absolute;
+	z-index: 1;
+	width: 400px;
+	max-width: 100%; 
+	padding-bottom: 48%;
+	background: url(../images/duke-wunder.jpg) no-repeat;
+	background-size: contain;
+	background-position: center top;
+	top: 0px;
+}
+@media (max-width: 992px){
+	.homepage-feat-duke{
+		display: none;
+	}
+	.homepage-feat-meta h1{
+		font-size: 40px;
+	}
+}
+@media (max-width: 767px){
+	.homepage-feat-truck{
+		padding-bottom: 35%;
+	}
+	.homepage-feat-meta h1{
+		font-size: 34px;
+	}
+}
+#hydro-massage p{
+	line-height: 1.8em;
+}
+@media (min-width: 768px){
+	#hydro-massage{
+		margin-top: 28px;
+	}
 }
 .footer{
 	background: #eeeeee;
