@@ -169,6 +169,17 @@ p{
 		margin-top: 28px;
 	}
 }
+/* Make an appointment */
+.make-an-appointment-wrap{
+	padding: 26px;
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	margin-top: 28px;
+}
+.form-required{
+	color: red;
+	font-weight: bold;
+}
 .footer{
 	background: #eeeeee;
 	padding: 60px 0px;
