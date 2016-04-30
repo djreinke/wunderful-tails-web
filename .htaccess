@@ -1,0 +1,7 @@
+RewriteEngine On 
+# Handle requests for "make-an-appointment"
+RewriteRule    ^make-an-appointment/?$    make-an-appointment.php    [NC,L]
+RewriteRule    ^about-us/?$    about-us.php    [NC,L]
+RewriteRule    ^home/?$    index.php    [NC,L]
+RewriteRule    ^services/?$    services.php    [NC,L]
+RewriteRule    ^mobile-pet-salon/?$    mobile-pet-salon.php    [NC,L]

@@ -9,7 +9,7 @@
       <div class="col-md-9 col-md-offset-3 homepage-feat-meta">
         <h1 class="center">Full Service Dog Grooming at Your Doorstep</h1>
         <div class="homepage-feat-truck"></div>
-        <p><button type="button" class="btn btn-primary btn-lg float-center">Make an Appointment</button></p>
+        <p><a href="make-an-appointment"><button type="button" class="btn btn-primary btn-lg float-center">Make an Appointment</button></a></p>
       </div>
       <div class="homepage-feat-duke"></div>
     </div>
@@ -21,7 +21,7 @@
       <div class="col-sm-4 center"><h3>Deshedding Services</h3><img class="img-full" src="assets/images/home_feat02.jpg"></div>
       <div class="col-sm-4 center"><h3>Skincare Treatments</h3><img class="img-full" src="assets/images/home_feat03.jpg"></div>
     </div>
-      <p><button type="button" class="btn btn-primary btn-lg float-center buf-md">See All Services</button></p>
+      <p><a href="services"><button type="button" class="btn btn-primary btn-lg float-center buf-md">See All Services</button></a></p>
     </div><!-- /.container -->
   </div>
   <div class="sec grey">

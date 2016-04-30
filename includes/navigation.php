@@ -12,14 +12,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php"><img alt="Wunderful Tails Mobile Pet Salon Morris Country NJ" src="assets/images/wunderful-tails-logo.jpg"></a>
+          <a class="navbar-brand" href="home"><img alt="Wunderful Tails Mobile Pet Salon Morris Country NJ" src="assets/images/wunderful-tails-logo.jpg"></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="mobile-pet-salon.php">Mobile Pet Salon</a></li>
-            <li><a href="services.php">Services</a></li>
-            <li><a href="about-us.php">About Us</a></li>
-            <li><a href="make-an-appointment.php">Make an Appointment</a></li>
+            <li class="active"><a href="mobile-pet-salon">Mobile Pet Salon</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="about-us">About Us</a></li>
+            <li><a href="make-an-appointment">Make an Appointment</a></li>
           </ul>
           <div class="navbar-social-wrap">
           <a href="https://www.facebook.com/WunderfulTails/" target="_blank"><div class="navbar-social facebook"></div></a>
