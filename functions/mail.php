@@ -9,8 +9,9 @@ else{
 	}
 	$message = htmlspecialchars($message, ENT_QUOTES);
 	$message = wordwrap($message,80);
-	
+
 	$headers = 'From: info@wunderfultails.com' . "\r\n" .
+	'CC: dreink95@gmail.com' . "\r\n" .
     'Reply-To: info@wunderfultails.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
