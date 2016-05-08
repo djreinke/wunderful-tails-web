@@ -16,8 +16,8 @@ else{
     'X-Mailer: PHP/' . phpversion();
 
 	if(mail("dreink95@gmail.com","Wunderful Tails Appointment Request",$message, $headers))
-		header("Location: ../make-an-appointment?status=success");
+		header("Location: ../appointment-confirmation?status=success&customer=".$_POST["first-name"]);
 	else
-		header("Location: ../make-an-appointment?status=failure");
+		header("Location: ../appointment-confirmation?status=failure");
 }
 ?>

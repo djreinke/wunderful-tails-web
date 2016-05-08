@@ -5,7 +5,6 @@ $( requiredFields ).blur(function (){
 	validateInput( $(this) );
 });
 $( "#make-appointment-submit" ).click(function() {
-  
   $( requiredFields ).each(function( index ) {
   	validateInput( $(this) );
   });
@@ -14,6 +13,9 @@ $( "#make-appointment-submit" ).click(function() {
   	$('html, body').animate({
     	scrollTop: $("#make-appointment").offset().top
 	}, 300);
+  }
+  else{
+  	validatePolicyProcedures( $('#policies-procedures-checkbox') );
   }
 });
 
@@ -30,4 +32,12 @@ function validateInput( el ){
   		$(el).parents('div.form-group').children("span.help-block").remove();
   		errors = false;
   	}
+}
+function validatePolicyProcedures( el ){
+	if( !$(el).is(':checked') ){
+		$(el).parents('label').parents('div.form-group').addClass('has-error');
+		errors = true;
+		event.preventDefault();
+		$('#policies-procedures').modal('show');
+	}
 }

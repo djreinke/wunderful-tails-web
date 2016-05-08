@@ -167,7 +167,7 @@
 				<textarea class="form-control" name="pet-additional-notes" rows="3"></textarea> 
 			</div>
 			<div class="buf-md">
-				<h4>Read and accept policies and procedures</h4>
+				<h3>Read and accept policies and procedures</h3>
 				<!-- Modal trigger -->
 				<a href="#" data-toggle="modal" data-target="#policies-procedures">
 				  Please click here to read and accept the policies and procedures
@@ -195,9 +195,9 @@
 			      </ul></p>
 			      </div>
 			      <div class="modal-footer">
-			      <div class="checkbox">
+			      <div class="checkbox form-group">
 				    <label class="control-label">
-				      <input type="checkbox" name="accept-policies-procedures" value="yes" required> I have read and accept the policies and procedures.
+				      <input id="policies-procedures-checkbox" type="checkbox" name="accept-policies-procedures" value="yes" required> I have read and accept the policies and procedures.
 				    <span class="form-required">*</span>
 				    </label>
 				  </div>

@@ -1,11 +1,24 @@
 html, body{
 	font-family: 'montserratregular', "Montserrat", Helvetica, Arial, sans-serif;
 }
+html{
+	position: relative;
+  	min-height: 100%;
+}
+body{
+	margin-bottom: 170px;
+}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 	font-family: 'montserratbold', Helvetica, Arial, sans-serif;
 }
 p{
 	font-family: 'montserratregular', Helvetica, Arial, sans-serif;
+}
+.success{
+	color: #3c763d;
+}
+strong{
+	font-family: 'montserratbold', Helvetica, Arial, sans-serif;
 }
 .top-bar{
 	text-align: center;
@@ -191,6 +204,9 @@ p a:hover .btn-primary{
 	overflow-y: scroll;
 }
 .footer{
+	position: absolute;
+    bottom: 0;
+    width: 100%;
 	background: #eeeeee;
 	padding: 60px 0px;
 }
