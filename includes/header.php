@@ -7,19 +7,19 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="<?php if(isset($page_desc)){ echo $page_desc; } ?>">
     <meta name="author" content="Wunderful Tails">
-    <link rel="icon" href="favicon.ico">
+    <?php print '<link rel="icon" href="'.$base_url.'favicon.ico">';?>
 
     <title>
       <?php if(isset($page_title)){ echo $page_title; } ?>
     </title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <?php print '<link href="'.$base_url.'bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">';?>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/webfont/font.min.css" rel="stylesheet">
+    <?php print '<link href="'.$base_url.'assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">';?>
+    <?php print '<link href="'.$base_url.'assets/css/style.css" rel="stylesheet">';?>
+    <?php print '<link href="'.$base_url.'assets/webfont/font.min.css" rel="stylesheet">';?>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

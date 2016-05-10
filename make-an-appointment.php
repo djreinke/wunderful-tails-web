@@ -1,7 +1,7 @@
 <?php 
 	require 'includes/globals.php';
 	$page_title = 'Make an Appointment';
-	$page_scripts[0] = "assets/js/appointment-checker.js";
+	$page_scripts[0] = $base_url."assets/js/appointment-checker.js";
 	include 'includes/header.php'; 
 	include 'includes/navigation.php'; 
 ?>
@@ -13,16 +13,15 @@
 	<?php 
 		if( isset($_GET['status']) ){
 			if( $_GET['status'] == "failure"){
-
 				echo '<br><div class="alert alert-danger alert-dismissible" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-  <strong>Error!</strong> We\'re sorry, we ran into an error and could not confirm your appointment. Please try again. 
-</div>';
+  					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  					<strong>Error!</strong> We\'re sorry, we ran into an error and could not confirm your appointment. It looks like the required form values were either not filled out or not sent to the server correctly. Please try again. 
+					</div>';
 			}
 		} 
 	?>
 	<div class="make-an-appointment-wrap col-md-9">
-		<form action="functions/mail.php" method="post" id="make-appointment">
+		<?php print '<form action="'.$base_url.'functions/mail.php" method="post" id="make-appointment">';?>
 			<h3>Primary Contact Info.</h3>
 			<div class="form-group">
 			    <label class="control-label" for="first-name">First Name <span class="form-required">*</span></label>

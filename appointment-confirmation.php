@@ -18,8 +18,21 @@
 				}
 				?>
 				<p class="lead center">It looks like we had trouble processing your request. We reccomend hitting the back button on your browser to try submitting our form again or calling us at <?php echo $phone; ?>.</p>
-				<button type="button" onclick="window.history.back();"class="btn btn-primary btn-lg float-center buf-md">Go Back and Try Again!</button>
-				<?php
+				<?php 
+					if( isset($_GET['error']) ){
+						print '<p class="center"><strong>Error code: </strong>';
+						switch ($_GET['error']) {
+						    case "mail":
+						        print "mail_failure";
+						        break;
+						    default:
+						        print "none";
+						}
+						print '</p>
+								<button type="button" onclick="window.history.back();"class="btn btn-primary btn-lg float-center buf-md">Go Back and Try Again!</button>';
+					}
+				?>
+			<?php					
 			}
 			// Success
 			else if( $_GET['status'] == "success"){
@@ -30,6 +43,7 @@
 					print '<h1 class="page-title">Appointment Confirmation</h1>';
 				}
 				?>
+				<p>Thank you for completing our appointment scheduling form. We've received your submission.</p>
 				<hr>
 				<div class="col-md-8">
 					<h3>What's next?</h3>
@@ -48,7 +62,9 @@
 			}
 		} 
 		else{
-			print '<h1 class="page-title center">Oops, something went wrong!</h1><p class="lead center">We either had trouble processing your appointment or you reached this page in error.</p>';
+			print '<h1 class="page-title center">Oops, something went wrong!</h1><p class="lead center">We either had trouble processing your appointment or you reached this page in error.</p>';?>
+				<button type="button" onclick="window.history.back();"class="btn btn-primary btn-lg float-center buf-md">Go Back!</button>
+			<?php
 		}
 	?>
 	</div>

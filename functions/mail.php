@@ -1,7 +1,6 @@
 <?php
 if( !isset($_POST["first-name"]) || !isset($_POST["last-name"]) || !isset($_POST["home-phone"]) || !isset($_POST["email"]) || !isset($_POST["city"]) || !isset($_POST["zip"]) ){
-		//var_dump($_POST);
-		header("Location: ../make-an-appointment?status=failure");
+		header("Location: ../make-an-appointment?status=failure&error=required-forms");
 }
 else{
 	foreach($_POST as $key => $value){
@@ -17,7 +16,13 @@ else{
 
 	if(mail("dreink95@gmail.com","Wunderful Tails Appointment Request",$message, $headers))
 		header("Location: ../appointment-confirmation?status=success&customer=".$_POST["first-name"]);
-	else
-		header("Location: ../appointment-confirmation?status=failure");
+	else{
+		if( !isset($_POST["first-name"]) ){
+			header("Location: ../appointment-confirmation?status=failure&error=mail");
+		}
+		else{
+			header("Location: ../appointment-confirmation?status=failure&error=mail&customer=".$_POST["first-name"] );
+		}
+	}
 }
 ?>
