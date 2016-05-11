@@ -60,13 +60,29 @@ figcaption{
 	display: none;
 }
 .navbar-social{
-	width: 40px;
-	height: 40px;
-	margin: 10px;
+	width: 34px;
+	height: 34px;
+	margin: 14px 2px;
 	float: right;
 }
 .navbar-social.facebook{
 	background: url(../images/wunderful-tails-facebook.png) no-repeat;
+	background-size: 100%;
+}
+.navbar-social.yelp{
+	background: url(../images/wunderful-tails-yelp.png) no-repeat;
+	background-size: 100%;
+}
+.navbar-social.twitter{
+	background: url(../images/wunderful-tails-twitter.png) no-repeat;
+	background-size: 100%;
+}
+.navbar-social.gplus{
+	background: url(../images/wunderful-tails-google-plus.png) no-repeat;
+	background-size: 100%;
+}
+.navbar-social.pintrest{
+	background: url(../images/wunderful-tails-pintrest.png) no-repeat;
 	background-size: 100%;
 }
 .nav>li>a{

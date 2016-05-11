@@ -4,8 +4,8 @@
 	$phone = "973-207-3946";
 	$email = "info@wunderfultails.com";
 	$page_scripts;
-	$base_url = "http://massivecatalyst.com/dev/wunderful-tails/";
-	//$base_url = "http://localhost/wunderfultails/";
+	//$base_url = "http://massivecatalyst.com/dev/wunderful-tails/";
+	$base_url = "http://localhost/wunderfultails/";
 	$pre_footer_blurbs = array(
 		"Dogs’ only sweat glands are between their paw pads", 
 		"Your dog’s whiskers help him “see” in the dark.", 

@@ -22,7 +22,7 @@
       <?php print '<div class="col-sm-4 center"><h3>Deshedding Services</h3><img class="img-full" src="'.$base_url.'assets/images/home_feat02.jpg"></div>';?>
       <?php print '<div class="col-sm-4 center"><h3>Skincare Treatments</h3><img class="img-full" src="'.$base_url.'assets/images/home_feat03.jpg"></div>';?>
     </div>
-      <p><?php print '<a href="'.$base_url.'services" class="no-u">';?><button type="button" class="btn btn-primary btn-lg float-center buf-md">See All Services</button></a></p>
+      <p><?php print '<a href="'.$base_url.'services" class="no-u"><button type="button" class="btn btn-primary btn-lg float-center buf-md">See All Services</button></a>';?></p>
     </div><!-- /.container -->
   </div>
   <div class="sec grey">

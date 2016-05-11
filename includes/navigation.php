@@ -22,7 +22,11 @@
             <?php print '<li><a href="'.$base_url.'make-an-appointment">Make an Appointment</a></li>';?>
           </ul>
           <div class="navbar-social-wrap">
-          <a href="https://www.facebook.com/WunderfulTails/" target="_blank"><div class="navbar-social facebook"></div></a>
+            <a href="https://plus.google.com/106970502315414175336/about" target="_blank"><div class="navbar-social pintrest"></div></a>
+            <a href="https://plus.google.com/106970502315414175336/about" target="_blank"><div class="navbar-social gplus"></div></a>
+            <a href="https://twitter.com/WunderfulTails" target="_blank"><div class="navbar-social twitter"></div></a>
+            <a href="http://www.yelp.com/biz/wunderful-tails-mobile-pet-salon-llc-dover" target="_blank"><div class="navbar-social yelp"></div></a>
+            <a href="https://www.facebook.com/WunderfulTails/" target="_blank"><div class="navbar-social facebook"></div></a>
           </div>
         </div><!--/.nav-collapse -->
       </div>
