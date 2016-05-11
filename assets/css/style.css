@@ -41,6 +41,9 @@ strong{
 	width: 100%;
 	max-width: 100%;
 }
+figcaption{
+	margin: 10px 0px;
+}
 .navbar{
 	border-bottom: 4px solid #E4E4E4;
 	margin-bottom: 0px;
@@ -96,6 +99,9 @@ strong{
 p a:hover .btn-primary{
 	text-decoration: none !important;
 }
+a.no-u, a.no-u:hover, a.no-u:active{
+	text-decoration: none;
+}
 .btn-primary{
 	background: #0F7AD6;
 	border-color: #0F7AD6;
@@ -111,11 +117,15 @@ p a:hover .btn-primary{
 	border-color: #0F7AD6;
 	text-decoration: none;
 }
+
 .buf-sm{
 	margin: 20px auto;
 }
 .buf-md{
 	margin: 40px auto;
+}
+.buf-sm-bottom{
+	margin-bottom: 20px;
 }
 .buf-md-bottom{
 	margin-bottom: 40px;
@@ -123,11 +133,27 @@ p a:hover .btn-primary{
 .buf-lg-bottom{
 	margin-bottom: 60px;
 }
+.buf-left{
+	padding-left: 30px;
+}
 .sec{
 	padding: 30px 0px;
 }
 .sec.grey{
 	background: #eeeeee;
+}
+.map-wrap{
+    position: relative;
+    padding-bottom: 75%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.map-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
 }
 .homepage-feat{
 	background: #d2151d;
@@ -170,6 +196,9 @@ p a:hover .btn-primary{
 	.homepage-feat-meta h1{
 		font-size: 40px;
 	}
+	.buf-left{
+		padding-left: initial;
+	}
 }
 @media (max-width: 767px){
 	.homepage-feat-truck{
@@ -194,6 +223,12 @@ p a:hover .btn-primary{
 	border: 1px solid #cccccc;
 	margin-top: 28px;
 }
+@media (max-width: 767px){
+	.make-an-appointment-wrap{
+		padding: 0px;
+		border: none;
+	}
+}
 .form-required{
 	color: red;
 	font-weight: bold;
@@ -202,6 +237,31 @@ p a:hover .btn-primary{
 	max-height: 100%;
 	height: 500px;
 	overflow-y: scroll;
+}
+/* Services */
+.service-entry{
+	margin-bottom: 20px;
+}
+/* Footer */
+.pre-footer{
+	color: #ffffff;
+
+	border-top: 1px solid #cccccc;
+	background: #0F7AD6;
+}
+.btn-pre-footer{
+	background: transparent;
+	color: #ffffff;
+	border-radius: 0px;
+	border: 1px solid #ffffff;
+	padding: 16px 16px;
+	text-shadow: none;
+	font-weight: bold;
+	transition: all 100ms ease;
+}
+.btn-pre-footer:hover{
+	background: #ffffff;
+	color: #0F7AD6;
 }
 .footer{
 	position: absolute;
@@ -224,5 +284,9 @@ p a:hover .btn-primary{
 	.sec{
 		padding-top: 70px;
 		padding-bottom: 70px;
+	}
+	.pre-footer{
+		padding-top: 48px;
+		padding-bottom: 50px;
 	}
 }

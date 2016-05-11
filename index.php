@@ -1,5 +1,6 @@
 <?php 
-  require 'includes/globals.php'; 
+  require 'includes/globals.php';
+  $page_id = 'home'; 
   include 'includes/header.php'; 
   include 'includes/navigation.php'; 
 ?>
@@ -9,7 +10,7 @@
       <div class="col-md-9 col-md-offset-3 homepage-feat-meta">
         <h1 class="center">Full Service Dog Grooming at Your Doorstep</h1>
         <div class="homepage-feat-truck"></div>
-        <p><a href="make-an-appointment"><button type="button" class="btn btn-primary btn-lg float-center">Make an Appointment</button></a></p>
+        <p><a href="make-an-appointment" class="no-u"><button type="button" class="btn btn-primary btn-lg float-center">Make an Appointment</button></a></p>
       </div>
       <div class="homepage-feat-duke"></div>
     </div>
@@ -21,7 +22,7 @@
       <?php print '<div class="col-sm-4 center"><h3>Deshedding Services</h3><img class="img-full" src="'.$base_url.'assets/images/home_feat02.jpg"></div>';?>
       <?php print '<div class="col-sm-4 center"><h3>Skincare Treatments</h3><img class="img-full" src="'.$base_url.'assets/images/home_feat03.jpg"></div>';?>
     </div>
-      <p><?php print '<a href="'.$base_url.'services">';?><button type="button" class="btn btn-primary btn-lg float-center buf-md">See All Services</button></a></p>
+      <p><?php print '<a href="'.$base_url.'services" class="no-u">';?><button type="button" class="btn btn-primary btn-lg float-center buf-md">See All Services</button></a></p>
     </div><!-- /.container -->
   </div>
   <div class="sec grey">
@@ -65,5 +66,5 @@
     </div>
     </div>
   </div>
-
+  
   <?php include 'includes/footer.php'; ?>

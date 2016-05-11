@@ -1,6 +1,7 @@
 <?php 
 	require 'includes/globals.php';
 	$page_title = 'Your Appointment Confirmation';
+	$page_id = "confirmation";
 	include 'includes/header.php'; 
 	include 'includes/navigation.php'; 
 ?>

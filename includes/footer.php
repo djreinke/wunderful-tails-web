@@ -1,3 +1,12 @@
+<?php
+  // pre-footer 
+  if ( isset($page_id) && $page_id != "appointment" && $page_id != "confirmation" ){
+    //generate random number
+    print '<div class="sec pre-footer center"><p class="lead center">Did you know: <a href="http://www.cesar.com/live-the-life/just-for-fun/100-weird-facts-about-dogs.aspx" target="_blank" style="color: #ffffff;">'.$pre_footer_blurbs[rand(0, count($pre_footer_blurbs)-1)].'</a></p>';
+    print '<p>How can we help your pet today?</p>';
+    print '<a href="'.$base_url.'make-an-appointment" class="no-u"><button type="button" class="btn btn-pre-footer btn-lg float-center">Make an Appointment</button></a></div>';
+  }
+?>
 <footer class="footer">
       <div class="container">
       <div class="row">
