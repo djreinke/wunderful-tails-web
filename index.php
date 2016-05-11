@@ -43,7 +43,7 @@
     <div class="container">
       <img class="center float-center" src="assets/images/ico-van.png">
       <h3 class="center">Why Mobile Dog Grooming?</h3>
-      <p class="lead center buf-lg-bottom">Some text here to explain the overview of benefits</p>
+      <p class="lead center buf-lg-bottom">Simply better for your pet and family</p>
       <div class="row">
       <div class="col-sm-6"><h4><strong>Benefits to your Pet</strong></h4>
       <ul>

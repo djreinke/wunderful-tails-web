@@ -14,7 +14,7 @@ else{
     'Reply-To: info@wunderfultails.com' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-	if(mail("dreink95@gmail.com","Wunderful Tails Appointment Request",$message, $headers))
+	if(mail("info@wunderfultails.com","Wunderful Tails Appointment Request",$message, $headers))
 		header("Location: ../appointment-confirmation?status=success&customer=".$_POST["first-name"]);
 	else{
 		if( !isset($_POST["first-name"]) ){
