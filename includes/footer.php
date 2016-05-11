@@ -14,11 +14,11 @@
         <div class="col-sm-6">
           <nav class="footer-nav">
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Mobile Pet Salon</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Make an Appointment</a></li>
+            <?php print '<li><a href="'.$base_url.'home">Home</a></li>';?>
+            <?php print '<li><a href="'.$base_url.'mobile-pet-salon">Mobile Pet Salon</a></li>';?>
+            <?php print '<li><a href="'.$base_url.'services">Services</a></li>';?>
+            <?php print '<li><a href="'.$base_url.'about-us">About Us</a></li>';?>
+            <?php print '<li><a href="'.$base_url.'make-an-appointment">Make an Appointment</a></li>';?>
             </ul>
           </nav>
         </div>
