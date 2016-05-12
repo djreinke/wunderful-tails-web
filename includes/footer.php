@@ -8,27 +8,30 @@
   }
 ?>
 <footer class="footer">
-      <div class="container">
-      <div class="row">
-        <div class="col-sm-6">© Wunderful Tails Mobile Pet Salon LLC. All Rights Reserved. 2016.</div>
-        <div class="col-sm-6">
-          <nav class="footer-nav">
-            <ul>
-            <?php print '<li><a href="'.$base_url.'home">Home</a></li>';?>
-            <?php print '<li><a href="'.$base_url.'mobile-pet-salon">Mobile Pet Salon</a></li>';?>
-            <?php print '<li><a href="'.$base_url.'services">Services</a></li>';?>
-            <?php print '<li><a href="'.$base_url.'about-us">About Us</a></li>';?>
-            <?php print '<li><a href="'.$base_url.'make-an-appointment">Make an Appointment</a></li>';?>
-            </ul>
-          </nav>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">© Wunderful Tails Mobile Pet Salon LLC. All Rights Reserved. 2016.</div>
+      <div class="col-sm-6">
+        <nav class="footer-nav">
+          <ul>
+          <?php print '<li><a href="'.$base_url.'home">Home</a></li>';?>
+          <?php print '<li><a href="'.$base_url.'mobile-pet-salon">Mobile Pet Salon</a></li>';?>
+          <?php print '<li><a href="'.$base_url.'services">Services</a></li>';?>
+          <?php print '<li><a href="'.$base_url.'about-us">About Us</a></li>';?>
+          <?php print '<li><a href="'.$base_url.'make-an-appointment">Make an Appointment</a></li>';?>
+          </ul>
+        </nav>
       </div>
-      <div class="row">
-        <div class="col-sm-6">Randolph | Morristown | Dover | Rockaway | Denville | Morris Plains</div>
-        <div class="col-sm-6"></div>
-      </div>
-      </div>
-    </footer>
+    </div>
+    <div class="row buf-sm-bottom">
+      <div class="col-sm-6">Randolph | Morristown | Dover | Rockaway | Denville | Morris Plains</div>
+      <div class="col-sm-6"></div>
+    </div>
+    <div class="row center">
+    <div class="col-sm-12"><?php print '<img src="'.$base_url.'assets/images/payments.jpg" width="140px">';?></div>
+    </div>
+  </div>
+</footer>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

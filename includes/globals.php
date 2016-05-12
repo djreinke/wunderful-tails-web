@@ -4,6 +4,7 @@
 	$phone = "973-207-3946";
 	$email = "info@wunderfultails.com";
 	$page_scripts;
+	$page_desc = "Wunderful Tails is a mobile pet grooming service based out of Dover, New Jersey, providing dog grooming, deshedding, and skincare services to the greater Morris County, NJ area";
 	//$base_url = "http://massivecatalyst.com/dev/wunderful-tails/";
 	$base_url = "http://localhost/wunderfultails/";
 	$pre_footer_blurbs = array(

@@ -38,6 +38,7 @@
 			<ul>
 				<li>Bathing</li>
 				<li>Shampooing</li>
+				<li>Emergency Skunk Service</li>
 				<li>Rinsing</li>
 				<li>Conditioner</li>
 				<li>Ear Cleaning</li> 

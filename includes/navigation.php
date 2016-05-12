@@ -12,7 +12,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home"><?php print '<img alt="Wunderful Tails Mobile Pet Salon Morris Country NJ" src="'.$base_url.'assets/images/wunderful-tails-logo.jpg">';?></a>
+          <a class="navbar-brand" href="home"><?php print '<img alt="Wunderful Tails Mobile Pet Salon Morris Country, New Jersey" src="'.$base_url.'assets/images/wunderful-tails-logo.jpg">';?></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">

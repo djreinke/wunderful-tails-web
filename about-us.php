@@ -25,9 +25,9 @@
 			</ul>
 		</div>
 		<div class="col-md-4">
-			<?php print '<img src="'.$base_url.'assets/images/wunderful-tails-dover-nj-eric-kelly-owners-sm.jpg" class="img-full">';?>
+			<?php print '<img src="'.$base_url.'assets/images/wunderful-tails-dover-nj-eric-kelly-owners-sm.jpg" class="img-full" alt="Wunderful Tail Owners Kelly and Eric Wunder">';?>
 			<figcaption><strong>Above:</strong> Owners Kelly and Eric Wunder 2015 at the Wag'n Tails Factory upon delivery of our 2015 MB Sprinter</figcaption>
-			<?php print '<img src="'.$base_url.'assets/images/puptoberfest-2015-mobile-dog-grooming.jpg" class="img-full">';?>
+			<?php print '<img src="'.$base_url.'assets/images/puptoberfest-2015-mobile-dog-grooming.jpg" class="img-full" alt="Wunderful Tails at 11th Hour Rescue Event Puptoberfest 2015">';?>
 			<figcaption><strong>Above:</strong> 11th Hour Rescue event Puptoberfest 2015</figcaption>
 		</div>
 	</div>

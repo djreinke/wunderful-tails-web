@@ -6,7 +6,7 @@ html{
   	min-height: 100%;
 }
 body{
-	margin-bottom: 170px;
+	margin-bottom: 229px;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
 	font-family: 'montserratbold', Helvetica, Arial, sans-serif;
@@ -296,6 +296,11 @@ a.no-u, a.no-u:hover, a.no-u:active{
 .footer-nav ul li:last-of-type{
 	margin-right: 0px;
 }
+@media (max-width: 1199px){
+	body{
+		margin-bottom: 284px;
+	}
+}
 @media (min-width: 768px){
 	.sec{
 		padding-top: 70px;
@@ -304,5 +309,21 @@ a.no-u, a.no-u:hover, a.no-u:active{
 	.pre-footer{
 		padding-top: 48px;
 		padding-bottom: 50px;
+	}
+}
+@media (max-width: 767px){
+	body{
+		margin-bottom: 0px;
+	}
+	.footer{
+		position: relative;
+	}
+}
+@media (max-width: 480px){
+	.navbar-brand{
+		width: 240px;
+	}
+	.navbar-toggle {
+    	margin-top: 26px;
 	}
 }
