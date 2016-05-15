@@ -1,7 +1,7 @@
 <?php 
 	require 'includes/globals.php';
-	$page_title = 'Your Appointment Confirmation';
-	$page_id = "confirmation";
+	$config["page"]["title"] = 'Your Appointment Confirmation';
+	$config["page"]["id"] = "confirmation";
 	include 'includes/header.php'; 
 	include 'includes/navigation.php'; 
 ?>
@@ -18,7 +18,7 @@
 					print '<h1 class="page-title center">Oops, we\'re sorry. Something went wrong!</h1>';
 				}
 				?>
-				<p class="lead center">It looks like we had trouble processing your request. We reccomend hitting the back button on your browser to try submitting our form again or calling us at <?php echo $phone; ?>.</p>
+				<p class="lead center">It looks like we had trouble processing your request. We reccomend hitting the back button on your browser to try submitting our form again or calling us at <?php print $config["info"]["phone"]; ?>.</p>
 				<?php 
 					if( isset($_GET['error']) ){
 						print '<p class="center"><strong>Error code: </strong>';
@@ -55,7 +55,7 @@
 					<ul>
 						<li><a href="https://www.facebook.com/WunderfulTails/" target="_blank">Like and share us on facebook and get the latest updates</a></li>
 						<li><a href="http://www.yelp.com/biz/wunderful-tails-mobile-pet-salon-dover" target="_blank">Read some reviews on Yelp</a></li>
-						<li>Reach out to us with any questions or concerns at <?php echo $email;?> </li>
+						<li>Reach out to us with any questions or concerns at <?php print $config["info"]["email"];?> </li>
 						<li>Refer us to your friends!</li>
 					</ul>
 				</div>

@@ -1,7 +1,7 @@
 <?php 
 	require 'includes/globals.php';
-	$page_title = 'Mobile Pet Salon';
-	$page_id = 'mobile_salon';
+	$config["page"]["title"] = 'Mobile Pet Salon';
+	$config["page"]["id"] = 'mobile_salon';
 	include 'includes/header.php'; 
 	include 'includes/navigation.php'; 
 ?>
@@ -28,8 +28,8 @@
 				<p>Our two mobile pet salons are completely green and utilizes hybrid power technology. We pride ourselves on taking this step to help the environment we all share. This hybrid system has been in place for several years and we plan to persue additional green policies in the future.</p>
 			</div>
 			<div class="col-md-6">
-				<?php print '<img class="img-full buf-sm-bottom" src="'.$base_url.'assets/images/mobile-van.png">';?>
-				<?php print '<img class="img-full" src="'.$base_url.'assets/images/two-vans.jpg">';?>
+				<?php print '<img class="img-full buf-sm-bottom" src="'.$config["urls"]["baseUrl"].'assets/images/mobile-van.png" alt="Picture of Mobile Pet Salon at Wunderful Tails">';?>
+				<?php print '<img class="img-full" src="'.$config["urls"]["baseUrl"].'assets/images/two-vans.jpg" alt="Mobile Pet Salon Vans at Wunderful Tails Mobile Pet Salon">';?>
 			</div>	
 		</div>
 	</div>

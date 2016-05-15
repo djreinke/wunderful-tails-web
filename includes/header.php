@@ -5,21 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="<?php if(isset($page_desc)){ echo $page_desc; } ?>">
-    <meta name="author" content="Wunderful Tails">
-    <?php print '<link rel="icon" href="'.$base_url.'favicon.ico">';?>
-
-    <title>
-      <?php if(isset($page_title)){ echo $page_title; } ?>
-    </title>
+    <?php if(isset($config["page"]["description"])){print '<meta name="description" content="'.$config["page"]["description"].'">';}?>
+    <?php if(isset($config["page"]["keywords"])){print '<meta name="keywords" content="'.$config["page"]["keywords"].'">';}?>
+    <?php if(isset($config["info"]["seo_author"])){print '<meta name="author" content="'.$config["info"]["seo_author"].'">';}?>
+    <?php print '<link rel="icon" href="'.$config["urls"]["baseUrl"].'favicon.ico">';?>
+    <title><?php if(isset($config["page"]["title"])){ print $config["page"]["title"]; } ?></title>
 
     <!-- Bootstrap core CSS -->
-    <?php print '<link href="'.$base_url.'bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">';?>
+    <?php print '<link href="'.$config["urls"]["baseUrl"].'bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">';?>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <?php print '<link href="'.$base_url.'assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">';?>
-    <?php print '<link href="'.$base_url.'assets/css/style.css" rel="stylesheet">';?>
-    <?php print '<link href="'.$base_url.'assets/webfont/font.min.css" rel="stylesheet">';?>
+    <?php print '<link href="'.$config["urls"]["baseUrl"].'assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">';?>
+    <?php print '<link href="'.$config["urls"]["baseUrl"].'assets/css/style.css" rel="stylesheet">';?>
+    <?php print '<link href="'.$config["urls"]["baseUrl"].'assets/webfont/font.min.css" rel="stylesheet">';?>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>

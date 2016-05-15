@@ -1,7 +1,7 @@
 <?php 
 	require 'includes/globals.php';
-	$page_title = 'About Us';
-	$page_id = 'about';
+	$config["page"]["title"] = 'About Us';
+	$config["page"]["id"] = 'about';
 	include 'includes/header.php'; 
 	include 'includes/navigation.php'; 
 ?>
@@ -17,17 +17,17 @@
 			<p>We have flexible and convenient hours and also offer emergency service for the times it cannot wait. All the grooming products we use are natural and safe and we always treat your dog with gentle care. You never have to worry about a lack of patience from our professional groomers because we are all highly trained in dealing with dogs of all personalities and can handle them in a professional way. We will never cause your dog unnecessary stress because your dog is the most important part of what we do.</p>
 			<p>Trust Wunderful Tails Mobile Pet Salon LLC in the Morris County, NJ area to take care of your dog in a time of need. There is no better company for “grooming at your doorstep!”</p>
 			<h3>Our Team:</h3>
-			<ul>
-				<li>Kelly & Eric Wunder – Owners</li>
+			<ul itemscop itemtype="http://schema.org/Organization">
+				<li><span itemprop="founder">Kelly Wunder</span> & <span itemprop="founder">Eric Wunder</span> – Owners</li>
                 <li>Katie – Groomer (team member for 9+ Years), 13+ years grooming experience</li>
 				<li>Tina – Groomer, 10+ years grooming experience</li>
                 <li>Karin – Groomer/Assistant, Vet Tech</li>
 			</ul>
 		</div>
 		<div class="col-md-4">
-			<?php print '<img src="'.$base_url.'assets/images/wunderful-tails-dover-nj-eric-kelly-owners-sm.jpg" class="img-full" alt="Wunderful Tail Owners Kelly and Eric Wunder">';?>
+			<?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/wunderful-tails-dover-nj-eric-kelly-owners-sm.jpg" class="img-full" alt="Wunderful Tails Owners Kelly and Eric Wunder">';?>
 			<figcaption><strong>Above:</strong> Owners Kelly and Eric Wunder 2015 at the Wag'n Tails Factory upon delivery of our 2015 MB Sprinter</figcaption>
-			<?php print '<img src="'.$base_url.'assets/images/puptoberfest-2015-mobile-dog-grooming.jpg" class="img-full" alt="Wunderful Tails at 11th Hour Rescue Event Puptoberfest 2015">';?>
+			<?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/puptoberfest-2015-mobile-dog-grooming.jpg" class="img-full" alt="Wunderful Tails at 11th Hour Rescue Event Puptoberfest 2015">';?>
 			<figcaption><strong>Above:</strong> 11th Hour Rescue event Puptoberfest 2015</figcaption>
 		</div>
 	</div>

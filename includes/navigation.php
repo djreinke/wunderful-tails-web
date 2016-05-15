@@ -1,6 +1,6 @@
 <div class="top-bar">
-  <div class="container">
-    Mobile Pet Salon in Morris County, New Jersey - Phone: <?php echo $phone;?> Email: <?php echo $email;?> 
+  <div class="container" itemscop itemtype="http://schema.org/Organization">
+    <span id="pre-header-intro-text">Mobile Pet Salon in Morris County, New Jersey - </span>Phone: <span itemprop="telephone"><?php print $config["info"]["phone"];?></span> Email: <span itemprop="email"><?php print $config["info"]["email"];?></span> 
   </div>
 </div>
 <nav class="navbar navbar-static-top">
@@ -12,14 +12,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="home"><?php print '<img alt="Wunderful Tails Mobile Pet Salon Morris Country, New Jersey" src="'.$base_url.'assets/images/wunderful-tails-logo.jpg">';?></a>
+          <a class="navbar-brand" href="home" itemscop itemtype="http://schema.org/Organization"><?php print '<img alt="Wunderful Tails Mobile Pet Salon Morris Country, New Jersey, Logo" src="'.$config["urls"]["baseUrl"].'assets/images/wunderful-tails-logo.jpg" itemprop="logo">';?></a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <?php print '<li class="active"><a href="'.$base_url.'mobile-pet-salon">Mobile Pet Salon</a></li>';?>
-            <?php print '<li><a href="'.$base_url.'services">Services</a></li>';?>
-            <?php print '<li><a href="'.$base_url.'about-us">About Us</a></li>';?>
-            <?php print '<li><a href="'.$base_url.'make-an-appointment">Make an Appointment</a></li>';?>
+            <?php print '<li class="active"><a href="'.$config["urls"]["baseUrl"].'mobile-pet-salon">Mobile Pet Salon</a></li>';?>
+            <?php print '<li><a href="'.$config["urls"]["baseUrl"].'services">Services</a></li>';?>
+            <?php print '<li><a href="'.$config["urls"]["baseUrl"].'about-us">About Us</a></li>';?>
+            <?php print '<li><a href="'.$config["urls"]["baseUrl"].'make-an-appointment">Make an Appointment</a></li>';?>
           </ul>
           <div class="navbar-social-wrap">
             <a href="https://plus.google.com/106970502315414175336/about" target="_blank"><div class="navbar-social pintrest"></div></a>

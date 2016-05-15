@@ -1,16 +1,16 @@
 <?php 
 	require 'includes/globals.php';
-	$page_title = 'Make an Appointment';
-	$page_id = 'appointment';
-	$page_scripts[0] = $base_url."assets/js/appointment-checker.js";
+	$config["page"]["title"] = 'Make an Appointment';
+	$config["page"]["id"] = 'appointment';
+	$config["page"]["js"][0] = $config["urls"]["baseUrl"]."assets/js/appointment-checker.js";
 	include 'includes/header.php'; 
 	include 'includes/navigation.php'; 
 ?>
 <div class="sec">
-	<div class="container">
+	<div class="container" itemscop itemtype="http://schema.org/Organization">
 		<h1 class="page-title">Make An Appointment</h1>
 		<p class="lead">Please fill out the form below to make an appointment for our mobile pet salon.</p>
-		<p>If you encounter any problems or would like to speak with us directly please call - <?php echo $phone;?></p>
+		<p>If you encounter any problems or would like to speak with us directly please call - <span itemprop="telephone"><?php print $config["info"]["phone"];?></span></p>
 		<?php 
 			if( isset($_GET['status']) ){
 				if( $_GET['status'] == "failure"){
@@ -22,7 +22,7 @@
 			} 
 		?>
 		<div class="make-an-appointment-wrap col-md-9">
-			<?php print '<form action="'.$base_url.'functions/mail.php" method="post" id="make-appointment">';?>
+			<?php print '<form action="'.$config["urls"]["baseUrl"].'functions/mail.php" method="post" id="make-appointment">';?>
 				<h3>Primary Contact Info.</h3>
 				<div class="form-group">
 				    <label class="control-label" for="first-name">First Name <span class="form-required">*</span></label>
@@ -212,16 +212,16 @@
 
 			</form>
 		</div>	
-		<div class="col-md-3 buf-left" >
+		<div class="col-md-3 buf-left" itemscop itemtype="http://schema.org/Organization">
 			<h3>Our Location</h3>
-			<p><a href="https://www.google.com/maps/place/Dover,+NJ/@40.8883231,-74.5760151,14z/data=!3m1!4b1!4m5!3m4!1s0x89c3754c0b110fdd:0x7011ac8f0b333916!8m2!3d40.883988!4d-74.5621025">Dover, New Jersey, 07801</a></p>
+			<p><a href="https://www.google.com/maps/place/Dover,+NJ/@40.8883231,-74.5760151,14z/data=!3m1!4b1!4m5!3m4!1s0x89c3754c0b110fdd:0x7011ac8f0b333916!8m2!3d40.883988!4d-74.5621025" itemprop="address"><?php print $config["info"]["location"];?></a></p>
 			<div class="map-wrap buf-sm-bottom">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24130.002738262796!2d-74.5760579834471!3d40.8883231195272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3754c0b110fdd%3A0x7011ac8f0b333916!2sDover%2C+NJ!5e0!3m2!1sen!2sus!4v1462906436098" width="600" height="450" frameborder="0" class="map-responsive" style="border:0" allowfullscreen></iframe>
 			</div>
 			<h3>Business Hours</h3>
-			<p>Mon-Sun: 7:30am-9:00pm</p>
-			<?php print '<img src="'.$base_url.'assets/images/pups-groomed.jpg" class="img-full buf-sm-bottom">';?>
-			<?php print '<img src="'.$base_url.'assets/images/kat-groomed.jpg" class="img-full">';?>
+			<p><?php print $config["info"]["biz_hours"];?></p>
+			<?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/pups-groomed.jpg" class="img-full buf-sm-bottom" alt="Dogs freshly groomed at Wunderful Tails">';?>
+			<?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/kat-groomed.jpg" class="img-full" alt="Cats freshly groomed at Wunderful Tails">';?>
 		</div>	
 	</div>
 </div>
