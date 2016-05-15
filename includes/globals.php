@@ -1,8 +1,8 @@
 <?php
 $config = array(
     "urls" => array(
-        "baseUrl" => "http://localhost/wunderfultails/" 
-        //"baseUrl" => "http://massivecatalyst.com/dev/wunderful-tails/"
+        //"baseUrl" => "http://localhost/wunderfultails/" 
+        "baseUrl" => "http://massivecatalyst.com/dev/wunderful-tails/"
     ),
     "page" => array(
     	"id" => "default",
@@ -17,6 +17,9 @@ $config = array(
     	"biz_hours" => "Mon-Sun: 7:30am-9:00pm",
     	"location" => "Dover, New Jersey, 07801",
     	"seo_author" => "Wunderful Tails Mobile Pet Salon LLC"
+    ),
+    "seo" => array(
+    	"og_image" => "wunderful-tails-mobile-pet-salon-morris-county-nj.jpg"
     )
 );
 $pre_footer_blurbs = array(
