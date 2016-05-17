@@ -7,8 +7,9 @@
 
   <div class="jumbotron homepage-feat">
     <div class="container">
-      <div class="col-md-9 col-md-offset-3 homepage-feat-meta">
+      <div class="col-md-8 col-md-offset-4 homepage-feat-meta">
         <h1 class="center">Wunderful Tails - Full Service Dog Grooming at Your Doorstep</h1>
+        <p class="center">Keeping your dog happy and healthy without hassle.</p>
         <div class="homepage-feat-truck"></div>
         <p><a href="make-an-appointment" class="no-u"><button type="button" class="btn btn-primary btn-lg float-center">Make an Appointment</button></a></p>
       </div>

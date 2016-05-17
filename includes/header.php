@@ -10,7 +10,7 @@
     <?php if(isset($config["info"]["seo_author"])){print '<meta name="author" content="'.$config["info"]["seo_author"].'">';}?>
     <?php print '<link rel="icon" href="'.$config["urls"]["baseUrl"].'favicon.ico">';?>
     <title><?php if(isset($config["page"]["title"])){ print $config["page"]["title"]; } ?></title>
-    <?php print '<meta property="og:url" content="'.$config["urls"]["baseUrl"].'home">';?>
+    <?php print '<meta property="og:url" content="'.$config["urls"]["baseUrl"].'">';?>
     <meta property="og:title" content="Wunderful Tails Mobile Pet Salon, Morris County, New Jersey" />
     <meta property="og:description" content="Providing professional mobile dog grooming, deshedding, skincare services and more from our dual mobile pet salons to your doorstep!" />
     <meta property="og:type" content="website" />
@@ -20,7 +20,6 @@
     <meta property="og:image:height" content="1121">
     <!-- Bootstrap core CSS -->
     <?php print '<link href="'.$config["urls"]["baseUrl"].'bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">';?>
-
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <?php print '<link href="'.$config["urls"]["baseUrl"].'assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">';?>
     <?php print '<link href="'.$config["urls"]["baseUrl"].'assets/css/style.css" rel="stylesheet">';?>

@@ -184,6 +184,7 @@ a.no-u, a.no-u:hover, a.no-u:active{
 .homepage-feat-meta{
 	position: relative;
 	z-index: 2;
+	text-shadow: 0 3px 2px rgba(0,0,0,.3);
 }
 .homepage-feat-meta h1{
 	font-size: 38px;
