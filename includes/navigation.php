@@ -1,6 +1,6 @@
 <div class="top-bar">
   <div class="container" itemscop itemtype="http://schema.org/Organization">
-    <span id="pre-header-intro-text">Mobile Pet Salon in Morris & Sussex County, New Jersey - </span>Phone: <span itemprop="telephone"><?php print $config["info"]["phone"];?></span> Email: <span itemprop="email"><?php print $config["info"]["email"];?></span> 
+    <span id="pre-header-intro-text">Mobile Pet Salon in Morris & Sussex County, New Jersey - </span>Phone: <span itemprop="telephone"><?php print $config["info"]["phone"];?></span> Email: <span itemprop="email"><a href="mailto:info@wunderfultails.com" title="Email Wunderful Tails"><?php print $config["info"]["email"];?></a></span> 
   </div>
 </div>
 <nav class="navbar navbar-static-top">
@@ -17,7 +17,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <?php print '<li class="active"><a href="'.$config["urls"]["baseUrl"].'mobile-pet-salon">Mobile Pet Salon</a></li>';?>
-            <?php print '<li><a href="'.$config["urls"]["baseUrl"].'services">Services</a></li>';?>
+            <?php print '<li><a href="'.$config["urls"]["baseUrl"].'services">Services & Pricing</a></li>';?>
             <?php print '<li><a href="'.$config["urls"]["baseUrl"].'about-us">About Us</a></li>';?>
             <?php print '<li><a href="'.$config["urls"]["baseUrl"].'make-an-appointment">Make an Appointment</a></li>';?>
           </ul>

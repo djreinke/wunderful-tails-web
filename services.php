@@ -33,6 +33,11 @@
 	</div>
 	<hr>
 	<div class="row">
+		<h2>Pricing</h2>
+		<p class="lead">Pricing varries depending on the size, breed, weight, the condition of your pet’s coat and service time. Telephone quotes are close estimates and will be confirmed after an initial examination of your pet. Additionally, you may fill out our <?php print '<a href="'.$config["urls"]["baseUrl"].'make-an-appointment">online form to schedule an appointment </a>';?>and help us help you get the best price and best service for your pet.</p>
+	</div>
+	<hr>
+	<div class="row">
 		<div class="col-md-6">
 			<h3>Additional service options:</h3> 
 			<ul>

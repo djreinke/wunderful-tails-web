@@ -10,7 +10,7 @@
 <footer class="footer">
   <div class="container">
     <div class="row" itemscop itemtype="http://schema.org/Organization">
-      <div class="col-sm-6 footer-col">© <span itemprop="legalName">Wunderful Tails Mobile Pet Salon LLC</span>. All Rights Reserved. 2016.</div>
+      <div class="col-sm-6 footer-col">© <span itemprop="legalName"><strong>Wunderful Tails Mobile Pet Salon LLC</strong></span>. All Rights Reserved. 2016.</div>
       <div class="col-sm-6 footer-col">
         <nav class="footer-nav">
           <ul class="right">
@@ -25,11 +25,29 @@
       </div>
     </div>
     <div class="row buf-sm-bottom">
-      <div class="col-sm-6 footer-col">Randolph | Morristown | Dover | Rockaway | Denville | Morris Plains</div>
+      <div class="col-sm-6 footer-col">Phone: <?php print $config["info"]["phone"];?> | Email: <span itemprop="email"><a href="mailto:info@wunderfultails.com" title="Email Wunderful Tails"><?php print $config["info"]["email"];?></a></div>
       <div class="col-sm-6 right footer-col"><?php print '<a href="'.$config["urls"]["baseUrl"].'gift-certificate.pdf" target="_blank">Gift Certificates</a>';?> | Site by <a href="http://danielreinke.com" target="_blank">Daniel Reinke</a></div>
     </div>
+    <div class="row center buf-sm-bottom">
+      <div class="col-sm-12 footer-towns"> 
+        <?php
+          if(isset($config["towns"])){
+            print '<p>';
+            for($x = 0; $x < count($config["towns"]); $x++){
+              if($x != (count($config["towns"])-1) ){
+                print $config["towns"][$x].' | ';
+              }
+              else{
+                print $config["towns"][$x];
+              }
+            }
+            print '</p>';
+          }
+        ?>
+      </div>
+    </div>
     <div class="row center">
-    <div class="col-sm-12"><?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/payments.jpg" width="140px" alt="Accepted Payments at Wunderful Tails Mobile Pet Salon">';?></div>
+      <div class="col-sm-12"><?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/payments.jpg" width="140px" alt="Accepted Payments at Wunderful Tails Mobile Pet Salon">';?></div>
     </div>
   </div>
 </footer>

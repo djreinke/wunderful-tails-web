@@ -11,10 +11,10 @@ else{
 
 	$headers = 'From: info@wunderfultails.com' . "\r\n" .
 	'CC: dreink95@gmail.com' . "\r\n" .
-    'Reply-To: info@wunderfultails.com' . "\r\n" .
+    'Reply-To: '.$config["info"]["email"] . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-	if(mail("info@wunderfultails.com","Wunderful Tails Appointment Request",$message, $headers))
+	if(mail($config["info"]["email"],"Wunderful Tails Appointment Request", $message, $headers))
 		header("Location: ../appointment-confirmation?status=success&customer=".$_POST["first-name"]);
 	else{
 		if( !isset($_POST["first-name"]) ){

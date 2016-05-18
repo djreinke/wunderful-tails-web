@@ -10,6 +10,8 @@
 	<div class="container" itemscop itemtype="http://schema.org/Organization">
 		<h1 class="page-title">Make An Appointment</h1>
 		<p class="lead">Please fill out the form below to make an appointment for our mobile pet salon.</p>
+		<h4>Pricing Information</h4>
+		<p>Pricing varries depending on the size, breed, weight, the condition of your pet’s coat and service time. After completing this form we will evaluate these factors and get you the best quote we can to help you and your pet.</p> 
 		<p>If you encounter any problems or would like to speak with us directly please call - <span itemprop="telephone"><?php print $config["info"]["phone"];?></span></p>
 		<?php 
 			if( isset($_GET['status']) ){
@@ -218,6 +220,9 @@
 			<div class="map-wrap buf-sm-bottom">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24130.002738262796!2d-74.5760579834471!3d40.8883231195272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3754c0b110fdd%3A0x7011ac8f0b333916!2sDover%2C+NJ!5e0!3m2!1sen!2sus!4v1462906436098" width="600" height="450" frameborder="0" class="map-responsive" style="border:0" allowfullscreen></iframe>
 			</div>
+			<h3>Contact Info</h3>
+			<p>Phone: <?php print $config["info"]["phone"];?></p>
+			<p>Email: <?php print $config["info"]["email"];?></p>
 			<h3>Business Hours</h3>
 			<p><?php print $config["info"]["biz_hours"];?></p>
 			<?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/pups-groomed.jpg" class="img-full buf-sm-bottom" alt="Dogs freshly groomed at Wunderful Tails">';?>

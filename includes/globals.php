@@ -1,8 +1,8 @@
 <?php
 $config = array(
     "urls" => array(
-        //"baseUrl" => "http://localhost/wunderfultails/" 
-        "baseUrl" => "http://massivecatalyst.com/dev/wunderful-tails/"
+        "baseUrl" => "http://localhost/wunderfultails/" 
+        //"baseUrl" => "http://massivecatalyst.com/dev/wunderful-tails/"
     ),
     "page" => array(
     	"id" => "default",
@@ -20,6 +20,41 @@ $config = array(
     ),
     "seo" => array(
     	"og_image" => "wunderful-tails-mobile-pet-salon-morris-county-nj.jpg"
+    ),
+    "towns" => array(
+        "Boonton",
+        "Butler",
+        "Chatham",
+        "Chester",
+        "Denville",
+        "Dover",
+        "East Hanover",
+        "Florham Park",
+        "Hanover",
+        "Harding",
+        "Jefferson",
+        "Kinnelon",
+        "Lincoln Park",
+        "Long Hill",
+        "Madison",
+        "Mendham",
+        "Mine Hill",
+        "Montville",
+        "Morris Plains",
+        "Morristown",
+        "Mount Arlington",
+        "Mount Olive",
+        "Mountain Lakes",
+        "Netcong",
+        "Parsippany",
+        "Pequannock",
+        "Randolph",
+        "Riverdale",
+        "Rockaway",
+        "Roxbury",
+        "Victory Gardens",
+        "Washington",
+        "Wharton"
     )
 );
 $pre_footer_blurbs = array(
