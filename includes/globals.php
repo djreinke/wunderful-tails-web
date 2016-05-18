@@ -1,8 +1,8 @@
 <?php
 $config = array(
     "urls" => array(
-        "baseUrl" => "http://localhost/wunderfultails/" 
-        //"baseUrl" => "http://massivecatalyst.com/dev/wunderful-tails/"
+        //"baseUrl" => "http://localhost/wunderfultails/" 
+        "baseUrl" => "http://massivecatalyst.com/dev/wunderful-tails/"
     ),
     "page" => array(
     	"id" => "default",

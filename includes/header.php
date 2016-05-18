@@ -8,7 +8,8 @@
     <?php if(isset($config["page"]["description"])){print '<meta name="description" content="'.$config["page"]["description"].'">';}?>
     <?php if(isset($config["page"]["keywords"])){print '<meta name="keywords" content="'.$config["page"]["keywords"].'">';}?>
     <?php if(isset($config["info"]["seo_author"])){print '<meta name="author" content="'.$config["info"]["seo_author"].'">';}?>
-    <?php print '<link rel="icon" href="'.$config["urls"]["baseUrl"].'favicon.ico">';?>
+    <?php print '<link rel="shortcut icon" href="'.$config["urls"]["baseUrl"].'favicon.ico" type="image/x-icon">';?>
+    <?php print '<link rel="icon" href="'.$config["urls"]["baseUrl"].'favicon.ico" type="image/x-icon">';?>
     <title><?php if(isset($config["page"]["title"])){ print $config["page"]["title"]; } ?></title>
     <?php print '<meta property="og:url" content="'.$config["urls"]["baseUrl"].'">';?>
     <meta property="og:title" content="Wunderful Tails Mobile Pet Salon, Morris County, New Jersey" />
