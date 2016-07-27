@@ -56,7 +56,7 @@ figcaption{
 }
 .navbar-brand{
 	height: auto;
-	width: 320px;
+	width: 300px;
 }
 .navbar-brand img{
 	width: 100%;
@@ -66,9 +66,9 @@ figcaption{
 	display: none;
 }
 .navbar-social{
-	width: 34px;
-	height: 34px;
-	margin: 14px 2px;
+	width: 32px;
+	height: 32px;
+	margin: 14px 1.5px;
 	float: right;
 }
 .navbar-social.facebook{
@@ -94,6 +94,7 @@ figcaption{
 .nav>li>a{
 	color: #000000;
 	font-weight: bold;
+	padding: 10px 10px;
 }
 .navbar-toggle{
 	margin-top: 36px;
@@ -101,9 +102,10 @@ figcaption{
 .navbar-toggle .icon-bar{
 	background-color: #000000;
 }
+
 @media (min-width: 992px){
 	.navbar-nav {
-		margin-top: 40px;
+		margin-top: 10px;
 	}
 }
 @media (min-width: 768px){
@@ -112,6 +114,11 @@ figcaption{
 		text-align: right;
 	}
 	.navbar-social-wrap{display: block;}
+}
+@media (min-width: 1200px){
+	.navbar-nav {
+		margin-top: 30px;
+	}
 }
 @media (max-width: 767px){
 	.navbar-collapse{
@@ -166,7 +173,7 @@ a.no-u, a.no-u:hover, a.no-u:active{
 }
 .map-wrap{
     position: relative;
-    padding-bottom: 75%; // This is the aspect ratio
+    padding-bottom: 75%;
     height: 0;
     overflow: hidden;
 }
@@ -265,6 +272,11 @@ a.no-u, a.no-u:hover, a.no-u:active{
 .service-entry{
 	margin-bottom: 20px;
 }
+#grooming-cruise-pdf{
+	width: 100%;
+	height: 900px;
+	max-height: 1000px;
+}
 /* Footer */
 .pre-footer{
 	color: #ffffff;
@@ -318,7 +330,6 @@ a.no-u, a.no-u:hover, a.no-u:active{
 @media (max-width: 1199px){
 	.navbar-social-wrap{
 		float: left;
-		width: 100%;
 		margin-top: 0px;
 	}
 }
@@ -345,6 +356,7 @@ a.no-u, a.no-u:hover, a.no-u:active{
 	}
 	.navbar-social-wrap{
 		text-align: center;
+		width: 100%;
 	}
 	.navbar-social{
 		display: inline-block;
@@ -379,6 +391,10 @@ a.no-u, a.no-u:hover, a.no-u:active{
 		text-align: center;
 		border-bottom: 1px solid #cccccc;
 	}
+	#grooming-cruise-pdf{
+		width: 100%;
+		height: 700px;
+	}
 }
 @media (max-width: 560px){
 	.homepage-feat-meta h1{
@@ -389,6 +405,10 @@ a.no-u, a.no-u:hover, a.no-u:active{
 	}
 	.top-bar{
 		display: none;
+	}
+	#grooming-cruise-pdf{
+		width: 100%;
+		height: 450px;
 	}
 }
 @media (max-width: 480px){

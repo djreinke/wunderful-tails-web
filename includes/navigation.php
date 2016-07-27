@@ -1,6 +1,6 @@
 <div class="top-bar">
   <div class="container" itemscop itemtype="http://schema.org/Organization">
-    <span id="pre-header-intro-text">Mobile Pet Salon in Morris & Sussex County, New Jersey - </span>Phone: <span itemprop="telephone"><?php print $config["info"]["phone"];?></span> Email: <span itemprop="email"><a href="mailto:info@wunderfultails.com" title="Email Wunderful Tails"><?php print $config["info"]["email"];?></a></span> 
+    <span id="pre-header-intro-text">Mobile Pet Salon in Morris County, New Jersey - </span>Phone: <span itemprop="telephone"><?php print $config["info"]["phone"];?></span> Email: <span itemprop="email"><a href="mailto:info@wunderfultails.com" title="Email Wunderful Tails"><?php print $config["info"]["email"];?></a></span> 
   </div>
 </div>
 <nav class="navbar navbar-static-top">
@@ -20,8 +20,9 @@
             <?php print '<li><a href="'.$config["urls"]["baseUrl"].'services">Services & Pricing</a></li>';?>
             <?php print '<li><a href="'.$config["urls"]["baseUrl"].'about-us">About Us</a></li>';?>
             <?php print '<li><a href="'.$config["urls"]["baseUrl"].'make-an-appointment">Make an Appointment</a></li>';?>
+            <?php print '<li><a href="'.$config["urls"]["baseUrl"].'groomer-cruise-2018">Groomer Cruise</a></li>';?>
           </ul>
-          <div class="navbar-social-wrap">
+          <div class="navbar-social-wrap clearfix">
             <a href="https://www.pinterest.com/wunderfultailsm/" target="_blank"><div class="navbar-social pintrest"></div></a>
             <a href="https://plus.google.com/106970502315414175336/about" target="_blank"><div class="navbar-social gplus"></div></a>
             <a href="https://twitter.com/WunderfulTails" target="_blank"><div class="navbar-social twitter"></div></a>

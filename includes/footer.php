@@ -26,7 +26,7 @@
     </div>
     <div class="row buf-sm-bottom">
       <div class="col-sm-6 footer-col">Phone: <?php print $config["info"]["phone"];?> | Email: <span itemprop="email"><a href="mailto:info@wunderfultails.com" title="Email Wunderful Tails"><?php print $config["info"]["email"];?></a></div>
-      <div class="col-sm-6 right footer-col"><?php print '<a href="'.$config["urls"]["baseUrl"].'gift-certificate.pdf" target="_blank">Gift Certificates</a>';?> | Site by <a href="http://danielreinke.com" target="_blank">Daniel Reinke</a></div>
+      <div class="col-sm-6 right footer-col"><?php print '<a href="'.$config["urls"]["baseUrl"].'gift-certificate.pdf" target="_blank">Gift Certificates</a>';?> | Site by <a href="http://danielreinke.com?ref=wunderful-tails" target="_blank">Daniel Reinke</a></div>
     </div>
     <div class="row center buf-sm-bottom">
       <div class="col-sm-12 footer-towns"> 

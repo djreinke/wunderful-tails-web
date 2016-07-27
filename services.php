@@ -33,8 +33,10 @@
 	</div>
 	<hr>
 	<div class="row">
+		<div class="col-md-12">
 		<h2>Pricing</h2>
 		<p class="lead">Pricing varries depending on the size, breed, weight, the condition of your pet’s coat and service time. Telephone quotes are close estimates and will be confirmed after an initial examination of your pet. Additionally, you may fill out our <?php print '<a href="'.$config["urls"]["baseUrl"].'make-an-appointment">online form to schedule an appointment </a>';?>and help us help you get the best price and best service for your pet.</p>
+		</div>
 	</div>
 	<hr>
 	<div class="row">
@@ -49,12 +51,12 @@
 				<li>Ear Cleaning</li> 
 				<li>Trimming</li> 
 				<li>Nail filling</li> 
-				<li>and more!</li> 
+				<li>Pet Sitting</li> 
 			</ul>
 		</div>
 		<div class="col-md-6">
-		<h3>About Our Services</h3>
-		<p>No matter what kind of service your dog needs, we offer them all at a price you can afford. In addition to our regular low prices, we sometimes have special discounts and deals that can help you save even more. Our professional groomers have been highly trained in every kind of grooming service and are ready to give your dog loving care.</p>
+			<h3>About Our Services</h3>
+			<p>No matter what kind of service your dog needs, we offer luxury service at an affordable rate. In addition to our regular low prices, we sometimes have special discounts and deals that can help you save even more. Our professional groomers have been highly trained in every kind of grooming service and are ready to give your dog loving care.</p>
 		</div>
 	</div>
 	</div>

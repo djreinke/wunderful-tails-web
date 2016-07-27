@@ -186,7 +186,7 @@
 				      <div class="modal-body" id="policies-procedures-wrap">
 				      <p><ul>
 					      <li>All appointment times are approximate. Due to the unpredictability of live animals, traffic, weather, etc, usually a half-hour window for arrival time will be given. If we are running more than 15 minutes outside the window we will call or text you.</li>
-					      <li>Please be home for the entire arrival window. If no one is home and the pet is unavailable, the appointment will be considered forfeit after 15 minutes and need to be rescheduled. A no-show cancellation fee of the full cost of the appointment may apply.</li>
+					      <li>Must be present for the first appointment. For future appointments we can obtain alternate means of access. If no one is home and the pet is unavailable, the appointment will be considered forfeit after 15 minutes and need to be rescheduled. A no-show cancellation fee of the full cost of the appointment may apply.</li>
 					      <li>Reminder emails or text messages are sent out two days before your appointment. If you need to cancel or reschedule, please contact us as soon as possible. Appointments cancelled with less than 24 hours notice may be charged a $50 cancellation fee.</li>
 					      <li>You don’t need to be home for your pet’s grooming appointment! Arrange with us a key or code and we can groom your pet while you’re out. Feel free to run errands or go to work without worrying about your pet missing their appointment.</li>
 					      <li>Payment is due at time of service. Acceptable forms of payment are cash, check, and credit card. Credit card payments include Sales tax and a 3.5% convenience fee. Online invoicing and automatic payment schedules are available.</li>
@@ -226,7 +226,6 @@
 			<h3>Business Hours</h3>
 			<p><?php print $config["info"]["biz_hours"];?></p>
 			<?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/pups-groomed.jpg" class="img-full buf-sm-bottom" alt="Dogs freshly groomed at Wunderful Tails">';?>
-			<?php print '<img src="'.$config["urls"]["baseUrl"].'assets/images/kat-groomed.jpg" class="img-full" alt="Cats freshly groomed at Wunderful Tails">';?>
 		</div>	
 	</div>
 </div>
